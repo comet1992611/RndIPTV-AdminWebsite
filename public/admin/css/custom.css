@@ -1,0 +1,670 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.badgebox
+{
+    opacity: 0;
+}
+
+.badgebox + .badge
+{
+    /* Move the check mark away when unchecked */
+    text-indent: -999999px;
+    /* Makes the badge's width stay the same checked and unchecked */
+    width: 27px;
+}
+
+.badgebox:focus + .badge
+{
+    /* Set something to make the badge looks focused */
+    /* This really depends on the application, in my case it was: */
+
+    /* Adding a light border */
+    box-shadow: inset 0px 0px 5px;
+    /* Taking the difference out of the padding */
+}
+
+.badgebox:checked + .badge
+{
+    /* Move the check mark back when checked */
+    text-indent: 0;
+}
+
+/*Radio Toggle Allow users*/
+
+.toggle input[type="checkbox"] + .label-text:before{
+    content: "\f204";
+    font-family: "FontAwesome";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing:antialiased;
+    width: 1em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.toggle input[type="checkbox"]:checked + .label-text:before{
+    content: "\f205";
+    color: #337ab7;
+    animation: effect 250ms ease-in;
+}
+.toggle input[type="checkbox"]:checked + .label-text{
+
+    color: #337ab7;
+
+}
+@keyframes effect{
+    0%{transform: scale(0);}
+    25%{transform: scale(1.3);}
+    75%{transform: scale(1.4);}
+    100%{transform: scale(1);}
+}
+.toggle input[type="checkbox"] {
+    display: none;
+}
+span.label-text {
+    font-size: 18px;
+    padding: 5px 5px;
+}
+.form-check:hover {
+    color: #337ab7;
+    transition: .5s;
+}
+/*./Radio Toggle Allow users*/
+
+/*MAGO-INVOICE*/
+.slide-down-enter,
+.slide-down-leave
+{
+    -webkit-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition:200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    display:block;
+    overflow:hidden;
+    position:relative;
+}
+
+.items-table .row {
+    border-bottom:1px solid #ddd;
+    line-height:3em;
+}
+.items-table .row:last-child {
+    border-bottom:none;
+    line-height:3em;
+}
+
+.slide-down-enter.slide-down-enter-active,
+.slide-down-leave {
+    opacity:1;
+    height:46px;
+}
+
+.slide-down-leave.slide-down-leave-active,
+.slide-down-enter {
+    opacity:0;
+    height:0px;
+}
+
+
+.invoice-number-container * {
+    font-weight:bold;
+}
+
+.items-table .row:nth-child(even) {
+    background:#f9f9f9;
+}
+.items-table input {
+    line-height:1.5em;
+}
+.actions {
+    padding-top:1em;
+}
+input:focus {
+    outline: 0;
+}
+
+.heading {
+    background-color:#357EBD;
+    color:#FFF;
+    margin-bottom:1em;
+    text-align:center;
+    line-height:2.5em;
+}
+.branding {
+    padding-bottom:2em;
+    border-bottom:1px solid #ddd;
+}
+.logo-container {
+    text-align:right;
+}
+.infos .right {
+    text-align:right;
+}
+.infos .right input {
+    text-align:right;
+}
+.infos .input-container {
+    padding:3px 0;
+}
+
+.header.row {
+    font-weight:bold;
+    border-bottom:1px solid #ddd;
+    border-top:1px solid #ddd;
+}
+
+input, textarea{
+    border: 1px solid #FFF;
+}
+
+.container input:hover, .container textarea:hover,
+.table-striped > tbody > tr:nth-child(2n+1) > td input:hover,
+.container input:focus, .container textarea:focus,
+.table-striped > tbody > tr:nth-child(2n+1) > td input:focus{
+    border: 1px solid #CCC;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td input{
+    background-color: #F9F9F9;
+    border: 1px solid #F9F9F9;
+}
+
+
+
+@media print {
+    .noPrint {
+        display:none;
+    }
+}
+
+body{
+    padding:20px;
+}
+
+.infos input{
+    width: 300px;
+}
+
+.align-right input{
+    text-align:right;
+    width: 300px;
+}
+
+/*div.container{*/
+    /*width: 800px;*/
+/*}*/
+
+#imgInp{
+    display: none;
+}
+
+.copy {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: 40px 0 20px 0;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #404040;
+    cursor: default;
+    line-height: 1.4em;
+}
+
+.copy .love {
+    display: inline-block;
+    position: relative;
+    color: #ce0c15;
+}
+
+img#company_logo{
+    margin-top: -60px;
+    margin-bottom: -100px;
+}
+.input-container{
+    font-weight: bold;
+}
+
+.col-md-12.footer {
+    margin-top: 154px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.move{
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+/*./MAGO-INVOICE*/
+
+
+/*TIBO-INVOICE*/
+/*IMAGE SESSION*/
+img#logo_tibo {
+    margin-top: -15px;
+}
+.adresa{
+    color: #9c0;
+    padding-top: 10px;
+}
+/*./IMAGE SESSION*/
+
+/*CUSTOMER INFO*/
+.para1 {
+    font-weight: bold;
+    margin-top: 6px;
+}
+p.para2 {
+    font-size: 20px;
+    margin-top: 41px;
+    margin-left: 16px;
+}
+th.widt {
+    width: 169px;
+}
+p.para3 {
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: 16px;
+}
+/*./CUSTOMER INFO*/
+
+/*PARENT CODE*/
+p.para4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+p.para5 {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: -12px;
+}
+/*./PARENT CODE*/
+
+/*CUSTOMER CARE*/
+p.para6 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+span.sp1 {
+    font-weight: bold;
+    font-style: italic;
+}
+span.sp2 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+.footeri{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 11px;
+}
+/*./CUSTOMER CARE*/
+
+@page { size: auto;  margin: 0mm; }
+@media print{
+    .adresa{
+        color: #9c0 !important;
+        padding-top: 10px;
+    }
+    #printo{
+        width: 900px;
+        padding-top: 30px;
+    }
+}
+
+/*Drag and Drop Package*/
+
+
+.multiDemo ul[dnd-list] {
+    min-height: 42px;
+    padding-left: 0px;
+}
+
+.multiDemo ul[dnd-list] .dndPlaceholder {
+    background-color: #ddd;
+    display: block;
+    min-height: 42px;
+}
+
+.multiDemo ul[dnd-list] li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+}
+
+.multiDemo ul[dnd-list] li.selected {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+p.text-center.bg-default.paragraph {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 7px;
+    font-weight: bold;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+input#usr {
+    border: 2px solid #ddd;
+    width: 100%;
+    margin-bottom: 6px;
+    border-radius: 7px;
+}
+
+/*./Drag and Drop Package*/
+
+
+/*Company Logo*/
+img.img-responsive.logo_company {
+    position: relative;
+    top: -22px;
+    width: 321px;
+    height: 51px;
+}
+img.img-responsive.centered_logo_company {
+    margin-left: auto;
+    margin-right: auto;
+    width: 321px;
+    height: 51px;
+}
+
+@media (max-width: 767px) {
+    ul.nav.navbar-top-links.navbar-right.text-center.responsive.ng-scope {
+        padding-top: 50px;
+    }
+}
+/*===================================================================================================*/
+/*New Theme for Administration System*/
+/*=========================================Left Menu=================================================*/
+.navbar-default.sidebar.ng-scope {
+    background-color: #fff;
+    -webkit-box-shadow: 1px 0 20px rgba(0,0,0,.08);
+    box-shadow: 1px 0 20px rgba(0,0,0,.08);
+}
+ul#side-menu {
+    margin-top: -1px;
+    border-top: 2px solid #e8e9ed;
+}
+.sidebar ul li a.active {
+    background-color: #fff;
+    color: #00c292;
+}
+.nav>li>a {
+    color: #607d8b;
+    padding: 10px 28px;
+    font-weight: 700;
+}
+.nav>li>a:hover {
+    background-color: #fff ;
+    color: #00c292;
+    transition: 0.2s;
+}
+.nav>li>a:focus {
+    background-color: #fff ;
+}
+.sidebar ul li {
+    border-bottom: none;
+}
+.menu_space {
+    color: #455a64 ;
+    position: relative;
+    left: -9%;
+    font-size: 13px;
+    font-weight: 900;
+}
+div#wrapper {
+    background: #fff ;
+}
+/*effect-underline*/
+.nav>li>a:after {
+    content: '';
+    position: absolute;
+    color: #00c292;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 3px solid;
+    margin-top: 15px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.nav>li>a:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.dashboard_icon:before {
+    margin-left: -28px;
+}
+/*=========================================./Left Menu=================================================*/
+
+/*=========================================Navbar Top=================================================*/
+body {
+    padding: 0px;
+    background-color: #f1f2f7;
+}
+p#company_name {
+    color: #41434d;
+    position: relative;
+    top: 9px;
+    font-weight: 700;
+}
+.navbar-default {
+    background-color: #fff ;
+    border: none;
+}
+#wrapper .navbar-static-top {
+    border-bottom: 2px solid #e8e9ed;
+    padding-top: 14px;
+    /*-webkit-box-shadow: 0 10px 6px -6px black;*/
+    /*-moz-box-shadow: 0 10px 6px -6px black;*/
+    /*box-shadow: 0 10px 6px -6px black;*/
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #fff ;
+    color: #00c292;
+}
+div#page-wrapper {
+    border-left: none;
+    background-color: #f1f2f7;
+}
+/*  eshte per dropdown qe zgjedh gjuhen dhe profilin  .navbar-top-links .dropdown-menu li a*/
+
+/*=========================================./Navbar Top=================================================*/
+
+/*=========================================Body Dashboard=================================================*/
+.alert-info {
+    background-color: #fff;
+    color: #455a64;
+    border: none;
+    webkit-box-shadow: 0 0 20px rgba(0,0,0,.08);
+    box-shadow: 0 0 20px rgba(0,0,0,.08);
+}
+.panel-footer{
+    border-top: none !important;
+}
+.theme>.panel-heading{
+    background-color: #fff;
+    color: #455a64;
+
+}
+i#loginaccount_logo, div#footer1 {
+    color: #00c292;
+}
+i#channels_logo, div#footer2 {
+    color: #ab8ce4;
+}
+i#vod_logo, div#footer3 {
+    color: #03a9f3;
+}
+i#device_logo, div#footer4 {
+    color: #fb9678;
+}
+div#footer1,div#footer2,div#footer3,div#footer4{
+    display: none;
+}
+.titles_in_dashboard {
+    font-size: 23px;
+}
+.huge {
+    font-weight: 700;
+}
+.theme {
+    border: none;
+    webkit-box-shadow: 0 0 20px rgba(0,0,0,.08);
+    box-shadow: 0 0 20px rgba(0,0,0,.08);
+}
+.dashboard-content .panel-default .panel-heading{
+    background-color: #fff;
+    border: none;
+}
+.dashboard-content .panel-default .panel-heading a{
+    color: #455a64;
+    font-weight: bold;
+}
+thead {
+    background-color: #e8e9ef;
+}
+.table-striped > tbody > tr:nth-child(2n) > td {
+    background-color: #e6eef8;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td {
+    background-color: #e6eef8;
+
+}
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: white;
+ /*Choose your own color here*/
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
+}
+.table>thead>tr>th>a {
+    margin-left: 8px;
+}
+.table>tbody>tr>td {
+    border-top: none
+}
+.table {
+    font-weight: 700;
+}
+.table-condensed>tbody>tr>td {
+    padding: 13px;
+}
+/*=========================================./Body Dashboard=================================================*/
+
+/*=========================================Buttons=================================================*/
+/*#f44336eb*/
+
+label.btn.btn-default.allowButton {
+    color: white;
+    border-color: #00c292;
+    background-color: #00c292;
+    width: 110px;
+}
+label.btn.btn-default.deniedButton {
+    color: white;
+    border-color: #f44336eb;
+    background-color: #f44336eb;
+    width: 110px;
+}
+.btn.btn-default.allowButton .badge{
+    background-color: white;
+    color: #00c292;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+}
+.btn.btn-default.deniedButton .badge{
+    background-color: white;
+    color: #00c292;
+    font-weight: bold;
+    font-size: 18px;
+}
+button.btn.btn-default.dropdown-toggle {
+    background-color: transparent;
+    color: #00c292;
+    border: 1px solid #00c292;
+    transition: .3s;
+}
+button.btn.btn-default.dropdown-toggle:hover {
+    background-color: #00c292;
+    color: white;
+}
+button.btn.btn-default.dropdown-toggle:focus {
+    background-color: #00c292;
+    color: white;
+}
+a.btn.btn-default,button.btn.btn-default {
+    color: #00c292;
+    background-color: transparent;
+    border: 1px solid #00c292;
+    transition: .3s;
+}
+button.btn.btn-default:focus{
+    color: white;
+    background-color: #00c292;
+    border: none;
+    transition: .3s;
+}
+a.btn.btn-default:hover,button.btn.btn-default:hover {
+    color: white;
+    background-color: #00c292;
+}
+h4 {
+    color: #607d8b;
+    font-weight: 700;
+}
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../images/Preloader_2.gif) center no-repeat #fff;
+}
+
+@media (max-width: 1652px) {
+    download-invoice.ng-scope.ng-isolate-scope{
+        position: relative;
+        top: 3px;
+    }
+}
+@media (min-width: 1653px) {
+    download-invoice.ng-scope.ng-isolate-scope{
+        position: relative;
+        left: 3px;
+    }
+}
+p#paragraph_vod {
+    padding-left: 22px;
+}
+p#paragraph_vod:hover {
+    background-color: #00c292;
+    color: white;
+}

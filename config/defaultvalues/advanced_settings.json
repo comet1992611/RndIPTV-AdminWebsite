@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "parameter_id": "max_multilogin_nr",
+        "parameter_value": "2",
+        "parameter1_value": "",
+        "parameter2_value": "",
+        "parameter3_value": "",
+        "duration": 1,
+        "description": "This parameter defines the number of devices the user is allowed to login simultaneously. Parameter  : Define the number of devices. Other parameters : leave them blank. Duration : 1 (default)"
+    },
+    {
+        "id": 2,
+        "parameter_id": "transaction_vod_duration",
+        "parameter_value": "24",
+        "parameter1_value": "",
+        "parameter2_value": "",
+        "parameter3_value": "",
+        "duration": 1,
+        "description": ""
+    },
+    {
+        "id": 3,
+        "parameter_id": "woocomerce",
+        "parameter_value": "url",
+        "parameter1_value": "consumerKey",
+        "parameter2_value": "consumerSecret",
+        "parameter3_value": "",
+        "duration": 0,
+        "description": "This parameter is used to integrate the woocomerce billing with Magoware management system. Parameter  :  URL of the woocomerce page (http(s)://yourdomainname). Parameter 1 : Consumer Key found on woocomerce admin page under advanced settings. Parameter 2 : Consumer Secret key found on woocomerce admin page under advanced settings"
+    },
+    {
+        "id": 4,
+        "parameter_id": "stripe",
+        "parameter_value": "",
+        "parameter1_value": "Publishable key",
+        "parameter2_value": "Secret key",
+        "parameter3_value": "",
+        "duration": 0,
+        "description": "This parameter is used to integrate the Stripe billing system with Magoware management system. Parameter 1 : Publishable Key found on Stripe admin page under Development tools. Parameter 2 : Secret Key found on stripe admin page under Development tools."
+    },
+    {
+        "id": 5,
+        "parameter_id": "flussonic_token",
+        "parameter_value": "TOKEN_KEY",
+        "parameter1_value": "SALT",
+        "parameter2_value": "PASSWORD",
+        "parameter3_value": "",
+        "duration": 0,
+        "description": "This parameter is used to integrate the token for stream protection via Flussonic. Parameter  : TOKEN_KEY value used when configuring the token on Flussonic server. Parameter 1 : SALT value used when configuring the token on Flussonic server. Parameter 2 : PASSWORD used when configuring the token on Flussonic server. Parameter 3 : WINDOW value which determines the time in second the token is valuable."
+    },
+    {
+        "id": 6,
+        "parameter_id": "akamai_token",
+        "parameter_value": "TOKEN_KEY",
+        "parameter1_value": "SALT",
+        "parameter2_value": "WINDOW",
+        "parameter3_value": "",
+        "duration": 0,
+        "description": "This parameter id is used to integrate the token for stream protection via Akamai. Parameter  : TOKEN_KEY value used when configuring the token on Akamai server. Parameter 1 : SALT used when configuring the token on Flussonic server). Parameter 2 : WINDOW value which determines the time in second the token is valuable."
+    },
+    {
+        "id": 7,
+        "parameter_id": "paypal",
+        "parameter_value": "url",
+        "parameter1_value": "Secret Key",
+        "parameter2_value": "",
+        "parameter3_value": "",
+        "duration": 0,
+        "description": "This parameter is used to integrate the PayPal account with the Magoware management system. Parameter : URL of webview for the payment. Parameter 1 : Secret Key found on PayPal account."
+    }
+]

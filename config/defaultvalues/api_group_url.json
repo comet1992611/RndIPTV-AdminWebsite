@@ -1,0 +1,255 @@
+{
+    "status_dashboard": [
+        "/api/devices",
+        "/api/env_settings",
+        "/api/vods",
+        "/api/channels",
+        "/api/logindata",
+        "/api/logindata/",
+        "/api/combos/",
+        "/api/users/",
+        "/api/customerdata/",
+        "/api/salesreports"
+    ],
+    "new_customer": [
+        "/api/channelstreamsources",
+        "/api/vodstreamsources",
+        "/api/customergroups"
+    ],
+    "new_sale": [
+        "/api/logindata",
+        "/api/combos",
+        "/api/users"
+    ],
+    "customers": [
+        "/api/vodstreamsources/",
+        "/api/channelstreamsources/",
+        "/api/customeraccount",
+        "/api/vodstreamsources",
+        "/api/customeraccount/",
+        "/api/customeraccount",
+        "/api/channelstreamsources",
+        "/api/customergroups",
+        "/api/logindata/",
+        "/api/salesreports",
+        "/api/subscriptions",
+
+        "/api/customergroups/",
+        "/api/subscriptions/",
+        "/api/logindata",
+        "/api/packages/",
+        "/api/users",
+        "/api/combos",
+        "/api/invoice",
+        "/api/invoice/",
+        "/api/salesreports",
+        "/api/salesreports/"
+    ],
+    "devices": [
+        "/api/devices",
+        "/api/devices/"
+    ],
+    "remote_control": [
+        "/api/commands",
+        "/api/logindata"
+    ],
+    "payment_logs": [
+        "/api/paymenttransactions"
+    ],
+    "live_tv_channels": [
+        "/api/channelstreamsources/",
+        "/api/channelstreamsources",
+        "/api/packages",
+        "/api/channelstreams",
+        "/api/genres/",
+        "/api/genres",
+        "/api/channels/",
+        "/api/channels",
+        "/api/channelstreams/",
+        "/file-upload/single-file/genre/icon_url",
+        "/file-upload/single-file/channels/icon_url",
+        "/api/packagetypes/",
+        "/api/packagetypes",
+        "/api/livepackages",
+        "/api/livepackages/",
+        "/api/packagechannels"
+    ],
+    "vod_content": [
+        "/api/vodcategories",
+        "/api/vodcategories/",
+        "/api/packages",
+        "/api/vods",
+        "/api/vods/",
+        "/api/vodpackages",
+        "/api/vodpackages/",
+        "/api/vodsubtitles",
+        "/api/vodsubtitles/",
+        "/api/vodstreams",
+        "/api/vodstreams/",
+        "/api/vodstreamsources",
+        "/api/vodstreamsources/",
+        "/api/package_vod",
+        "/api/packagetypes",
+        "/api/packagetypes/",
+        "/api/vodmenu",
+        "/api/vodmenu/",
+        "/api/vodmenucarousel",
+        "/api/vodmenucarousel/",
+        "/api/update_film/",
+        "/file-upload/single-file/vodcategory/icon_url",
+        "/file-upload/single-file/vodcategory/small_icon_url",
+        "/file-upload/single-file/vod/icon_url",
+        "/file-upload/single-file/subtitles/subtitle_url",
+        "/file-upload/single-file/vod/image_url"
+    ],
+    "plans_and_packages": [
+        "/api/combos",
+        "/api/combos/",
+        "/api/combopackages",
+        "/api/combopackages/",
+        "/api/packages",
+        "/api/packages/",
+        "/api/livepackages",
+        "/api/livepackages/",
+        "/api/packagetypes",
+        "/api/packagetypes/",
+        "/api/vodpackages",
+        "/api/vodpackages/"
+    ],
+    "tv_shows": [
+        "/api/vodpackages",
+        "/api/packages",
+        "/api/vodcategories",
+        "/api/series",
+        "/api/series/",
+        "/api/season",
+        "/api/season/",
+        "/api/vodepisode",
+        "/api/vodepisode/",
+        "/api/tv_episode_streams",
+        "/api/tv_episode_subtitles"
+    ],
+    "epg_data": [
+        "/api/epgdata",
+        "/api/epgdata/",
+        "/api/epgdata_chart"
+    ],
+    "import_data": [
+        "/api/epgimport",
+        "/api/tmdbvods",
+        "/api/tmdbvods/",
+        "/api/packages",
+        "/api/vodcategories",
+        "/api/tmdbseries",
+        "/api/tmdbseries/",
+        "/api/import_channel",
+        "/api/import_vod"
+    ],
+    "branding": [
+        "/api/devicemenus",
+        "/api/devicemenus/",
+        "/api/htmlcontent",
+        "/api/htmlcontent/",
+        "/api/emailtemplate",
+        "/api/emailtemplate/",
+        "/api/imagessettings/"
+    ],
+    "subscription": [
+        "/api/subscriptions",
+        "/api/subscriptions/",
+        "/api/logindata",
+        "/api/logindata/",
+        "/api/packages/",
+        "/api/invoice",
+        "/api/invoice/",
+        "/api/users",
+        "/api/combos",
+        "/api/salesreports",
+        "/api/salesreports/",
+        "/api/channels",
+        "/api/channelstreamsources",
+        "/api/vodstreamsources"
+    ],
+    "notifications": [
+        "/api/messages",
+        "/api/messages/",
+        "/api/logindata",
+        "/api/ads"
+    ],
+    "system_configurations": [
+        "/api/emailsettings",
+        "/api/emailsettings/",
+        "/api/env_settings",
+        "/api/playersettings/",
+        "/api/url/",
+        "/api/url/",
+        "/api/apikeys/",
+        "/api/advancedsettings",
+        "/api/advancedsettings/",
+        "/apiv2/geoip/status",
+        "/apiv2/geoip/update",
+        "/api/settings/"
+    ],
+    "users_and_roles": [
+        "/api/users",
+        "/api/users/",
+        "/api/groups",
+        "/api/groups/",
+        "/api/grouprights",
+        "/api/settings",
+        "/api/settings/",
+        "/api/personal-details",
+        "/api/env_settings",
+        "/api/users/invite"
+    ],
+    "sale_agents": [
+        "/api/users",
+        "/api/users/",
+        "/api/groups/",
+        "/api/groups",
+        "/api/settings",
+        "/api/settings/",
+        "/api/users/invite"
+    ],
+    "system_info": [
+        "/api/appmanagement",
+        "/api/appmanagement",
+        "/api/appgroup",
+        "/api/logs",
+        "/api/logs/",
+        "/api/customergroups"
+    ],
+    "stream_sources": [
+        "/api/channelstreamsources",
+        "/api/channelstreamsources/",
+        "/api/channelstreams",
+        "/api/channelstreams/",
+        "/api/channels",
+        "/api/channels/",
+        "/api/vodstreamsources",
+        "/api/vodstreamsources/"
+    ],
+    "sale_reports": [
+        "/api/combos",
+        "/api/salesreports",
+        "/api/salesreports/",
+        "/api/invoice/download/",
+        "/api/sales_by_product",
+        "/api/sales_by_date",
+        "/api/sales_by_month",
+        "/api/users/",
+        "/api/logindata/",
+        "/api/combos/"
+    ],
+    "expiration_reports": [
+        "/api/sales_monthly_expiration",
+        "/api/sales_by_expiration"
+    ],
+    "device_reports": [],
+    "audience_reports": [],
+    "admin personal details": [
+        "/api/personal-details",
+        "/api/env_settings"
+    ],
+    "support": []
+}

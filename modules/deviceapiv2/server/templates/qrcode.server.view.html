@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style>
+        .login-page {
+            width: 360px;
+            height: 500px
+            padding: 8% 0 0;
+            margin: auto;
+        }
+        .form {
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            max-width: 360px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+        .form input {
+            font-family: "Roboto", sans-serif;
+            outline: 0;
+            background: #f2f2f2;
+            width: 100%;
+            border: 2px solid #262262;
+            border-radius: 26px;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .form button {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #262262 ;
+            width: 100%;
+            border: 0;
+            border-radius: 26px;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .form button:hover,.form button:active,.form button:focus {
+            background: #524e8e;
+        }
+        body {
+            background: #524e8e ;
+        }
+        .alert {
+            padding: 20px;
+            background-color: #19d819;
+            color: white;
+            margin: 18px;
+            text-align: center;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="alert" id="alerti" style="display: none;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>SUCCESS!</strong>
+</div>
+
+<div class="login-page" ng-app="myApp" ng-controller="myCtrl">
+    <div class="form">
+        <form class="login-form">
+            <input type="text" placeholder="username" id="username"/>
+            <input type="password" placeholder="password" id="password"/>
+            <input type="hidden" id="googleid" name="googleid" value="{{googleid}}"/>
+            <button ng-click="myFunc()">login</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope, $http) {
+
+        $scope.myFunc = function() {
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var googleid = document.getElementById('googleid').value;
+            var domain = window.location.protocol+'//'+window.location.hostname;
+
+            var data = {'username': username,'password': password,'googleid': googleid};
+
+            $http.post(domain+"/apiv2/remotedevicelogin", data).then(function (response,data, status, headers, config,file) {
+
+                if (response.status === 200) {
+                    document.getElementById('alerti').style.display = "block";
+                }
+
+            },function (data, status, headers, config) {
+                console.log(status);
+            });
+
+        };
+    });
+</script>
+
+
+
+</body>
+</html>

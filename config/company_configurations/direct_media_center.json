@@ -1,0 +1,5 @@
+{
+    "default_player": "exoplayer",
+    "get_ads": true,
+    "get_messages": false
+}

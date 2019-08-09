@@ -1,0 +1,98 @@
+body{
+    margin:0;
+    padding:0;
+    background:#000;
+    font-family:"Helvetica Neue",Helvetica, Arial;
+    overflow-x: hidden;
+}
+.w3-border {
+    border: none !important;
+}
+.logo_box h1 {
+    color: white;
+    float: right;
+    position: relative;
+    top: 200px;
+    right: 70px;
+    font-family: 'Clarendon LT Std';
+}
+.w3-half h2 {
+    color: yellow;
+}
+.w3-half span {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    font-style: italic;
+}
+.border_left {
+    border-left: 1px solid #303030;
+}
+.info {
+    padding-left: 0px;
+    color: white;
+    font-family:Georgia;
+    font-size:13px;
+}
+
+ul.info li p.social a.tw{
+    width: 28px;
+    height: 28px;
+    background: url(../images/social.png) left top no-repeat;
+    margin-right: 8px;
+    float: left;
+}
+
+ul.info li p.social a.fb{
+    width: 28px;
+    height: 28px;
+    background: url(../images/social.png) -36px top no-repeat;
+    float: left;
+    margin-right: 8px;
+}
+
+ul.info li p.social a.li{
+    width: 28px;
+    height: 28px;
+    background: url(../images/social.png) -72px top no-repeat;
+    float: left;
+}
+
+ul.info li p.social a.tw:hover{
+    width: 28px;
+    height: 28px;
+    background: url(../images/social.png) left bottom no-repeat;
+    float: left;
+}
+
+ul.info li p.social a.fb:hover{
+    width: 28px;
+    height: 28px;
+    background: url(../images/social.png) -36px bottom no-repeat;
+    float: left;
+}
+
+ul.info li p.social a.li:hover{
+    width: 28px;
+    height: 28px;
+    background: url(../images/social.png) -72px bottom no-repeat;
+    float: left;
+}
+
+
+
+/*MEDIA QUERIES */
+@media (min-width: 600px) and (max-width: 670px) {
+    .logo_box h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px)  {
+    .logo_box h1 {
+        top: 0;
+        right: 0;
+        float: none;
+        text-align: center;
+    }
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "template":"<div class='menu_space'>Settings</div>",
+    "children": []
+  },
+  {
+    "title":"System Users",
+    "icon":"<span class='fa fa-users fa-fw dashboard_icon'></span>",
+    "children": [{
+      "entity":"Groups",
+      "title":"User Groups",
+      "icon":"<span class='fa fa-users fa-fw dashboard_icon'></span>",
+      "link":"/Groups/list"
+    },{
+      "entity":"Users",
+      "title":"Users",
+      "icon":"<span class='fa fa-user fa-fw dashboard_icon'></span>",
+      "link":"/Users/list"
+    }]
+  },
+  {
+    "title": "Company Settings",
+    "icon": "<span class='fa fa-cog fa-fw dashboard_icon'></span>",
+    "children": [{
+      "entity": "company_settings",
+      "title": "Company Settings",
+      "icon": "<span class='fa fa-envelope-o fa-fw dashboard_icon'></span>",
+      "link": "/company_settings/list"
+    }]
+  }
+]

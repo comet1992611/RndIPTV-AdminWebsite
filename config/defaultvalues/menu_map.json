@@ -1,0 +1,531 @@
+[
+  {
+    "type": "label",
+    "title": "DASHBOARD",
+    "template": "<div class='menu_space'>Dashboard</div>",
+    "menu_list": [
+      {
+        "id":1,
+        "api_group_name": "status_dashboard",
+        "description": "Status Dashboard",
+        "icon": "<span class='fa fa-tachometer fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/dashboard"
+      },
+      {
+        "id": 2,
+        "api_group_name": "new_customer",
+        "description": "New Customer",
+        "icon": "<span class='fa fa-user-plus fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/CustomerAccount/create"
+      },
+      {
+        "id": 3,
+        "api_group_name": "new_sale",
+        "description": "New Sale",
+        "icon": "<span class='fa fa-plus fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/Subscriptions/create",
+        "api_list": [
+          {"api_url": "/api/ChannelStreamSources"},
+          {"api_url": "/api/ChannelStreamSources/:id"},
+          {"api_url": "/api/Combos"},
+          {"api_url": "/api/Combos/:id"},
+          {"api_url": "/api/CustomerData"},
+          {"api_url": "/api/CustomerData/:id"},
+          {"api_url": "/api/Devices"},
+          {"api_url": "/api/env_settings"},
+          {"api_url": "/api/LoginData"},
+          {"api_url": "/api/LoginData/:id"},
+          {"api_url": "/api/Packages/:id"},
+          {"api_url": "/api/Salesreports"},
+          {"api_url": "/api/Subscriptions"},
+          {"api_url": "/api/Users"},
+          {"api_url": "/api/Users/:id"},
+          {"api_url": "/api/VodStreamSources"},
+          {"api_url": "/api/VodStreamSources/:id"}
+        ]
+      }
+    ]
+  },
+  {
+    "type": "label",
+    "title": "CUSTOMER MANAGEMENT",
+    "template": "<div class='menu_space'>CUSTOMER MANAGEMENT</div>",
+    "menu_list": [
+      {
+        "id": 4,
+        "api_group_name": "customers",
+        "description": "Customers",
+        "icon": "<span class='fa fa-user-circle fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/CustomerAccount/list"
+      },
+      {
+        "id": 5,
+        "api_group_name": "devices",
+        "description": "Devices",
+        "icon": "<span class='fa fa-table fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/Devices/list"
+      },
+      {
+        "id": 6,
+        "api_group_name": "remote_control",
+        "description": "Remote Control",
+        "icon": "<span class='fa fa-terminal fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/commands/list"
+      },
+      {
+        "id": 7,
+        "api_group_name": "payment_logs",
+        "description": "Palyment Logs",
+        "icon": "<span class='fa fa-book fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/PaymentTransactions/list"
+      },
+      {
+        "id": 8,
+        "api_group_name": "notifications",
+        "description": "Notifications",
+        "icon": "<span class='fa fa-users fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "entity": "",
+            "title": "Information Message",
+            "icon": "<span class='fa fa-bell fa-fw dashboard_icon'></span>",
+            "link": "/messages/list"
+          },
+          {
+            "entity": "",
+            "title": "Banners",
+            "icon": "<span class='fa fa-buysellads fa-fw dashboard_icon'></span>",
+            "link": "/ads/list"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "label",
+    "title": "REPORTS",
+    "template": "<div class='menu_space'>REPORTS</div>",
+    "menu_list": [
+      {
+        "id": 9,
+        "api_group_name": "subscription",
+        "description": "Subscription",
+        "icon": "<span class='fa fa-calendar-check-o fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/Subscriptions/list"
+      },
+      {
+        "id": 10,
+        "api_group_name": "sale_reports",
+        "description": "Sales Reports",
+        "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "entity": "",
+            "title": "Salesreports",
+            "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+            "link": "/Salesreports/list"
+          },
+          {
+            "entity": "",
+            "title": "Product Sales",
+            "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+            "link": "/sales_by_product/list"
+          },
+          {
+            "entity": "",
+            "title": "Sales By Day",
+            "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+            "link": "/sales_by_date/list"
+          },
+          {
+            "entity": "",
+            "title": "Sales By Month",
+            "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+            "link": "/sales_by_month/list"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "api_group_name": "expiration_reports",
+        "description": "Expirations Reports",
+        "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "entity": "",
+            "title": "Account Expiration By Month",
+            "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+            "link": "/sales_monthly_expiration/list"
+          },
+          {
+            "entity": "",
+            "title": "Expirations List",
+            "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+            "link": "/sales_by_expiration/list"
+          },
+          {
+            "entity": "",
+            "title": "Expiration Next 30 Days",
+            "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+            "link": "/sales_by_expiration/list?search=%7B%22next%22:%2230%22%7D"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "label",
+    "title": "CONTENT MANAGEMENT",
+    "template": "<div class='menu_space'>VIDEO CONTENT MANAGEMENT</div>",
+    "menu_list": [
+      {
+        "id": 13,
+        "api_group_name": "live_tv_channels",
+        "description": "Live TV Channels",
+        "icon": "<span class='fa fa-television fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "entity": "",
+            "title": "Categories / Genre",
+            "icon": "<span class='fa fa-folder-open fa-fw dashboard_icon'></span>",
+            "link": "/Genres/list"
+          },
+          {
+            "entity": "",
+            "title": "Channels and Streams",
+            "icon": "<span class='fa fa-play-circle fa-fw dashboard_icon'></span>",
+            "link": "/Channels/list"
+          },
+          {
+            "entity": "",
+            "title": "Not Active Channels",
+            "icon": "<span class='fa fa-times-circle-o fa-fw dashboard_icon'></span>",
+            "link": "/Channels/list?search=%7B%22isavailable%22:false%7D"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "api_group_name": "vod_content",
+        "description": "VOD Content",
+        "icon": "<span class='fa fa-film fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "entity": "",
+            "title": "Categories / Genre",
+            "icon": "<span class='fa fa-folder-open fa-fw dashboard_icon'></span>",
+            "link": "/VodCategories/list"
+          },
+          {
+            "entity": "",
+            "title": "Videos and Streams",
+            "icon": "<span class='fa fa-play-circle fa-fw dashboard_icon'></span>",
+            "link": "/Vods/list?search=%7B%22pin_protected%22:0%7D"
+          },
+          {
+            "entity": "",
+            "title": "VOD Menu",
+            "icon": "<span class='fa fa-film fa-fw dashboard_icon'></span>",
+            "link": "/vodMenu/list"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "api_group_name": "tv_shows",
+        "description": "TV SHOWS",
+        "icon":  "<span class='fa fa-film fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "entity": "",
+            "title": "Categories / Genre",
+            "icon": "<span class='fa fa-folder-open fa-fw dashboard_icon'></span>",
+            "link": "/VodCategories/list"
+          },
+          {
+            "entity": "",
+            "title": "Serials",
+            "icon": "<span class='fa fa-video-camera fa-fw dashboard_icon'></span>",
+            "link": "/Series/list"
+          },
+          {
+            "entity": "",
+            "title": "Seasons",
+            "icon": "<span class='fa fa-video-camera fa-fw dashboard_icon'></span>",
+            "link": "/Season/list"
+          },
+          {
+            "entity": "",
+            "title": "Episodes",
+            "icon": "<span class='fa fa-video-camera fa-fw dashboard_icon'></span>",
+            "link": "/VodEpisode/list"
+          }
+        ]
+      },
+      {
+        "id":16,
+        "api_group_name": "epg_data",
+        "description": "EPG Data",
+        "icon": "<span class='fa fa-map-o fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "entity": "",
+            "title": "List",
+            "icon": "<span class='fa fa-list fa-fw dashboard_icon'></span>",
+            "link": "/EpgData/list"
+          },
+          {
+            "entity": "",
+            "title": "Graph",
+            "icon": "<span class='fa fa-bar-chart fa-fw dashboard_icon'></span>",
+            "link": "/epggraph"
+          }
+        ],
+        "api_list": []
+      },
+      {
+        "id":17,
+        "api_group_name": "import_data",
+        "description": "Import Data",
+        "icon": "<span class='fa fa-download fa-fw dashboard_icon'></span>",
+        "children": [
+            {
+            "entity": "",
+            "title": "EPG Import",
+            "icon": "<span class='fa fa-map-o fa-fw dashboard_icon'></span>",
+            "link": "/epgimport/create"
+          },
+          {
+            "entity": "",
+            "title": "Live TV Channels in CSV, M3U",
+            "icon": "<span class='fa fa-file fa-fw dashboard_icon'></span>",
+            "link": "/import_channel/create"
+          },
+          {
+            "entity": "",
+            "title": "VOD in CSV",
+            "icon": "<span class='fa fa-file fa-fw dashboard_icon'></span>",
+            "link": "/import_vod/create"
+          },
+          {
+            "entity": "",
+            "title": "Import Movies From TMDB",
+            "icon": "<span class='fa fa-file-video-o  fa-fw dashboard_icon'></span>",
+            "link": "/tmdbvods/list?search=%7B%22q%22:%22titanic%22%7D"
+          },
+          {
+            "entity": "",
+            "title": "Import TV Shows from TMDB",
+            "icon": "<span class='fa fa-file-video-o  fa-fw dashboard_icon'></span>",
+            "link": "/tmdbseries/list?search=%7B%22q%22:%22Stranger%20Things%22%7D"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "label",
+    "title": "SETTINGS",
+    "template": "<div class='menu_space'>SETTINGS</div>",
+    "menu_list": [
+      {
+        "id":18,
+        "api_group_name": "plans_and_packages",
+        "description": "Plans And Packages",
+        "icon": "<span class='fa fa-tags fa-fw dashboard_icon'></span>",
+        "children": [
+            {
+            "entity": "",
+            "title": "Plans",
+            "icon": "<span class='fa fa-tags fa-fw dashboard_icon'></span>",
+            "link": "/Combos/list"
+          },
+          {
+            "entity": "",
+            "title": "Live TV Packages",
+            "icon": "<span class='fa fa-th fa-fw dashboard_icon'></span>",
+            "link": "/livepackages/list"
+          },
+          {
+            "entity": "",
+            "title": "VOD Packages",
+            "icon": "<span class='fa fa-th fa-fw dashboard_icon'></span>",
+            "link": "/vodPackages/list"
+          }
+        ]
+      },
+      {
+        "id":19,
+        "api_group_name": "system_configurations",
+        "description": "System Configuration",
+        "icon": "<span class='fa fa-cog fa-fw dashboard_icon'></span>",
+        "children": [
+            {
+            "entity": "EmailSettings",
+            "title": "Email Settings",
+            "icon": "<span class='fa fa-envelope-o fa-fw dashboard_icon'></span>",
+            "link": "/EmailSettings/edit/1"
+          },
+          {
+            "entity": "PlayerSettings",
+            "title": "Player Settings",
+            "icon": "<span class='fa fa-play fa-fw dashboard_icon'></span>",
+            "link": "/PlayerSettings/edit/1"
+          },
+          {
+            "entity": "URL",
+            "title": "URLs",
+            "icon": "<span class='fa fa-link fa-fw dashboard_icon'></span>",
+            "link": "/URL/edit/1"
+          },
+          {
+            "entity": "ApiKeys",
+            "title": "Api Keys",
+            "icon": "<span class='fa fa-key fa-fw dashboard_icon'></span>",
+            "link": "/ApiKeys/edit/1"
+          },
+          {
+            "title": "API Parameters",
+            "icon": "<span class='fa fa-cog fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/AdvancedSettings/list"
+          },
+          {
+            "title": "GeoIP",
+            "icon": "<span class='fa fa-globe fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/geoip"
+          },
+          {
+            "entity": "Settings",
+            "title": "Other",
+            "icon": "<span class='fa fa-cog fa-fw dashboard_icon'></span>",
+            "link": "/Settings/edit/1"
+          }
+        ]
+      },
+      {
+        "id":20,
+        "api_group_name": "branding",
+        "description": "Appearence / Branding",
+        "icon": "<span class='fa fa-align-justify fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "title": "Main Menu",
+            "icon": "<span class='fa fa-align-justify fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/DeviceMenus/list"
+          },
+          {
+            "title": "Logos and Images",
+            "icon": "<span class='fa fa-picture-o fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/ImagesSettings/edit/1"
+          },
+          {
+            "title": "HTML Content",
+            "icon": "<span class='fa fa-code fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/htmlContent/list"
+          },
+          {
+            "title": "Email Templates",
+            "icon": "<span class='fa fa-envelope fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/EmailTemplate/list"
+          }
+        ]
+      },
+      {
+        "id":21,
+        "api_group_name": "stream_sources",
+        "description": "Stream Sources",
+        "icon": "<span class='fa fa-signal fa-fw dashboard_icon'></span>",
+        "children": [
+            {
+            "title": "Live TV Stream Sources",
+            "icon": "<span class='fa fa-signal fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/ChannelStreamSources/list"
+          },
+          {
+            "title": "VOD Stream Sources",
+            "icon": "<span class='fa fa-signal fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/VodStreamSources/list"
+          }
+        ]
+      },
+      {
+        "id":22,
+        "api_group_name": "users_and_roles",
+        "description": "Users and Roles",
+        "icon": "<span class='fa fa-users fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/Users/list"
+      },
+      {
+        "id":23,
+        "api_group_name": "sale_agents",
+        "description": "Sales Agents",
+        "icon": "<span class='fa fa-user fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/Users/list?search=%7B%22group_id%22:6%7D"
+      },
+      {
+        "id":24,
+        "api_group_name": "system_info",
+        "description": "System Info",
+        "icon": "<span class='fa fa-info fa-fw dashboard_icon'></span>",
+        "children": [
+          {
+            "title": "Customer Group",
+            "icon": "<span class='fa fa-users fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/CustomerGroups/list"
+          },
+          {
+            "title": "App Management",
+            "icon": "<span class='fa fa-upload fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/appmanagement/list"
+          },
+          {
+            "title": "APP Group",
+            "icon": "<span class='fa fa-file fa-fw dashboard_icon'></span>",
+            "link": "/appgroup/list",
+            "children": []
+          },
+          {
+            "title": "Audit Logs",
+            "icon": "<span class='fa fa-book fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/logs/list"
+          },
+          {
+            "title": "Server Status",
+            "icon": "<span class='fa fa-server fa-fw dashboard_icon'></span>",
+            "children": [],
+            "link": "/serverStatus"
+          }
+        ]
+      },
+      {
+        "id":23,
+        "api_group_name": "support",
+        "description": "Support",
+        "icon": "<span class='fa fa-question fa-fw dashboard_icon'></span>",
+        "children": [],
+        "link": "/support"
+      }
+    ]
+  }
+]
